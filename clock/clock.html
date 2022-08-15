@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Glassmorphic Clock</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body onclick="play()">
+  <audio id="audio" src="assets/theme.mp3"></audio>
+    <canvas></canvas> 
+      <div class="container-position">
+        <div class ="container">
+ 	        <div class = "glow">
+ 		        <div class="clock">
+              <div class="hour">
+             	  <div class="hour_hand" id="hour_hand"></div> <!-- hour_hand -->
+              </div> <!-- hour -->
+              <div class="min">
+             	  <div class="minute_hand" id="minute_hand"></div> <!-- minute_hand -->
+              </div> <!-- min -->
+              <div class="sec">
+             	  <div class="second_hand" id="second_hand"></div> <!-- second_hand -->
+              </div> <!-- sec -->
+            </div> <!-- clock -->
+ 		      </div> <!-- glow -->
+        </div> <!-- container -->
+    </div> <!-- bg -->
+ <script src="theme.js"></script> <!-- SCRIPT FOR BACKGROUND MUSIC (play and pause onClick)-->
+ <script  src="canvas_script.js"></script> <!-- SCRIPT FOR CANVAS ANIMATION ON MOUSE MOVE -->
+ <script src="main.js"></script> <!-- SCRIPT FOR THE FUNCTIONALITY OF CLOCK -->
+</body>
+</html>
